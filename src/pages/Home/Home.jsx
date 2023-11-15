@@ -19,9 +19,13 @@ export default function Home() {
         //     {books && <BookList books={books} />}
         //     <BookForm />
         // </div>
-        <div className="welcome-message">
-           Welcome to The party center
-           We hope we are going to have a great time togather
+        <div className='home-container'>
+            <div className="welcome-message">
+                Welcome to The party center
+                We hope we are going to have a great time togather
+            </div>
         </div>
     );
+
+
 }

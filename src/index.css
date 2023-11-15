@@ -76,21 +76,13 @@ textarea {
   padding: 8px;
   margin: 10px 0;
 }
-#main-content {
 
 
-  background: url("https://media.cnn.com/api/v1/images/stellar/prod/120509062537-kid-birthday-party.jpg?q=w_2121,h_1414,x_0,y_0,c_fill");
-
-
-}
 #main-content{ 
  
   width: 100%;
    
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh; 
-    margin-top: 30px;
+    
  } 
 
  .mainBox{
