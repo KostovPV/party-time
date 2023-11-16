@@ -23,6 +23,7 @@ export default function Details() {
 // console.log(new Date(Number(document.dueDate)));
 // console.log(new Date(Number(document.dueDate)).toDateString());
   return (document && (
+    <div className="details-container">
     <Card className="party-item">
       <div key={document.id} className="party-item-description">
 
@@ -38,6 +39,7 @@ export default function Details() {
         )}
       </div>
     </Card>
+    </div>
   )
   )
 }

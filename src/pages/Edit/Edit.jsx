@@ -70,6 +70,7 @@ export default function Edit() {
   }
 
   return (
+    <div className='edit-container'>
     <form className='edit-form' onSubmit={handleSubmit}>
       <label>
         <span>Add a new book title:</span>
@@ -109,6 +110,7 @@ export default function Edit() {
       <button onClick={onExit} >Exit</button>
 
     </form>
+    </div>
   )
 
 }

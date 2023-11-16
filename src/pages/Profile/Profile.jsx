@@ -71,10 +71,12 @@ export default function Profile() {
   }, [user])
 
   return (
+    <div className="profile-container">
     <div className="fields">
       <input type="file" onChange={handleChange} />
       <button disabled={loading || !photo} onClick={handleClick}>Upload</button>
       <img src={photoURL} alt="Avatar" className="avatar" />
+    </div>
     </div>
   );
 }

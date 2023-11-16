@@ -43,8 +43,8 @@ export default function Login() {
     // </form>
 
     <div className="loginForm">
-      <div className="form">
-        <form onSubmit={handleSubmit}>
+      <div className="login-form">
+        <form className="formi" onSubmit={handleSubmit}>
           <span>Login</span>
 
           <input

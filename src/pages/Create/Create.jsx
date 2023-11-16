@@ -52,6 +52,7 @@ export default function Create() {
   }
 
   return (
+    <div className='create-container'>
     <form className='create-form' onSubmit={handleSubmit}>
       <label>
         <span>Add a new party:</span>
@@ -100,5 +101,6 @@ export default function Create() {
       <button>Add</button>
 
     </form>
+    </div>
   )
 }

@@ -22,7 +22,7 @@ export default function Home() {
         <div className='home-container'>
             <div className="welcome-message">
                 Welcome to The party center
-                We hope we are going to have a great time togather
+                We hope we are going to have a great time together
             </div>
         </div>
     );
