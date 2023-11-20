@@ -21,7 +21,7 @@ console.log(parties);
               <h3>{party.partyName}</h3>
               <p>{party.details} to make.</p>
                {/* <div>{new Date(Number(document.dueDate)).toDateString()}</div> */}
-              <div>{party.category.value}</div>
+              <div>{party.category.label}</div>
               <div><Link to={`/list/${party.id}`} >Details</Link></div>
               {/* <SingleListItem party={party} /> */}
             </div>

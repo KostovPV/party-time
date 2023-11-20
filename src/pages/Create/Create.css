@@ -1,5 +1,4 @@
-
-.create-container {
+/* .create-container {
   margin-top: 0;
   background: url("https://th.bing.com/th/id/R.0170b343c978105f4cbdd101e3a33003?rik=Gk35AAp6dswcOA&riu=http%3a%2f%2fwww.macleans.ca%2fwp-content%2fuploads%2f2015%2f07%2fchildren-playing.jpg&ehk=poAqB%2fH4r6sSILJJVRy9v0LB21uMJKaXAorHOIZEwd0%3d&risl=&pid=ImgRaw&r=0");
   background-repeat: no-repeat;
@@ -8,9 +7,64 @@
   width: 100%
 }
 
-.create-form{
-    /* display: flex; */
-   
-    max-width: 600px;
-    margin: 40px auto;
-  }
+.create-form {
+ 
+
+  max-width: 600px;
+  margin: 40px auto;
+} */
+
+/* styles.css (or your preferred naming convention) */
+
+.create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+  background: url("https://th.bing.com/th/id/R.0170b343c978105f4cbdd101e3a33003?rik=Gk35AAp6dswcOA&riu=http%3a%2f%2fwww.macleans.ca%2fwp-content%2fuploads%2f2015%2f07%2fchildren-playing.jpg&ehk=poAqB%2fH4r6sSILJJVRy9v0LB21uMJKaXAorHOIZEwd0%3d&risl=&pid=ImgRaw&r=0");
+  /* background: linear-gradient(to right, #ff8c00, #ffa07a);  */
+}
+
+.create-form {
+  width: 400px; /* Adjust as needed */
+  padding: 20px;
+  
+  background-color: rgb(240, 230, 182); /* Solid white background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+label span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -101,6 +101,7 @@ export default function Edit() {
       <label>
         <span>Project category:</span>
         <Select
+          value={category}
           onChange={(option) => setCategory(option)}
           options={categories}
 

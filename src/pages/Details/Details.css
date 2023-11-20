@@ -1,4 +1,4 @@
-
+/* 
 .details-container {
   margin-top: 0;
   background: url("https://th.bing.com/th/id/R.0170b343c978105f4cbdd101e3a33003?rik=Gk35AAp6dswcOA&riu=http%3a%2f%2fwww.macleans.ca%2fwp-content%2fuploads%2f2015%2f07%2fchildren-playing.jpg&ehk=poAqB%2fH4r6sSILJJVRy9v0LB21uMJKaXAorHOIZEwd0%3d&risl=&pid=ImgRaw&r=0");
@@ -62,4 +62,68 @@
       font-size: 1.25rem;
       padding: 0.5rem 1.5rem;
     }
-  }
+  } */
+
+  /* details.css */
+
+/* details.css */
+
+.details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://th.bing.com/th/id/R.0170b343c978105f4cbdd101e3a33003?rik=Gk35AAp6dswcOA&riu=http%3a%2f%2fwww.macleans.ca%2fwp-content%2fuploads%2f2015%2f07%2fchildren-playing.jpg&ehk=poAqB%2fH4r6sSILJJVRy9v0LB21uMJKaXAorHOIZEwd0%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.party-item {
+  width: 400px;
+  padding: 20px;
+  background-color: rgb(240, 230, 182);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.party-item-description {
+  key: document.id;
+}
+
+.party-item h3 {
+  margin-bottom: 10px;
+}
+
+.party-item p {
+  margin-bottom: 5px;
+}
+
+.party-item a {
+  color: #4caf50;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.party-item a:hover {
+  text-decoration: underline;
+}
+
+/* Add new styles for input sections */
+.input-section {
+  margin-bottom: 15px;
+}
+
+.input-section label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-section input,
+.input-section textarea,
+.input-section select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
