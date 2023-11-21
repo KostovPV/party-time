@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import { db } from '../../firebase/config';
-import { collection, doc, setDoc, updateDoc, } from 'firebase/firestore';
+import { collection, deleteDoc, doc, setDoc, updateDoc, } from 'firebase/firestore';
 import { useAuthContext } from '../../hooks/useAuthContext';
 import Select from 'react-select'
 import { useNavigate, useParams } from 'react-router-dom';
@@ -29,7 +29,8 @@ export default function Edit() {
   const { document, error } = useDocument('parties', id)
   const navigate = useNavigate();
   console.log(document);
-
+  const userId = user?.uid;
+  const canEdit = (document?.author === userId)
   const [formError, setFormError] = useState(null)
 
   console.log(document);
@@ -62,12 +63,21 @@ export default function Edit() {
     setFormError(null)
     await updateDoc(ref, newparty
     )
+    navigate('/list')
   }
 
   const onExit = (e) => {
     e.preventDefault();
     navigate('/list')
   }
+
+  const deleteParty =async (e) => {
+    const ref = doc(db, "parties", id)
+    e.preventDefault();
+    await deleteDoc(ref)
+      navigate('/list')
+  }
+
 
   return (
     <div className='edit-container'>
@@ -108,8 +118,11 @@ export default function Edit() {
         />
       </label>
       <button>Save</button>
-      <button onClick={onExit} >Exit</button>
-
+      <button onClick={onExit} >Return</button>
+      {canEdit && (
+          <button onClick={deleteParty} >Delete</button>
+          
+        )}
     </form>
     </div>
   )

@@ -51,6 +51,10 @@ export default function Create() {
     navigate('/list')
   }
 
+  const onExit = (e) => {
+    e.preventDefault();
+    navigate('/list')
+  }
   return (
     <div className='create-container'>
     <form className='create-form' onSubmit={handleSubmit}>
@@ -99,7 +103,7 @@ export default function Create() {
           />
         </label>
       <button>Add</button>
-
+      <button onClick={onExit} >Return to Party's list</button>
     </form>
     </div>
   )
