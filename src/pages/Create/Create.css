@@ -23,6 +23,8 @@
   height: 100vh; /* Adjust as needed */
   background: url("https://th.bing.com/th/id/R.0170b343c978105f4cbdd101e3a33003?rik=Gk35AAp6dswcOA&riu=http%3a%2f%2fwww.macleans.ca%2fwp-content%2fuploads%2f2015%2f07%2fchildren-playing.jpg&ehk=poAqB%2fH4r6sSILJJVRy9v0LB21uMJKaXAorHOIZEwd0%3d&risl=&pid=ImgRaw&r=0");
   /* background: linear-gradient(to right, #ff8c00, #ffa07a);  */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .create-form {
