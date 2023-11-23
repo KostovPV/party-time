@@ -27,11 +27,11 @@ export default function Details() {
     <Card className="party-item">
       <div key={document.id} className="party-item-description">
 
-        <h3>{document.partyName}</h3>
-        <p>{document.details} to make.</p>
-        <p>{document.createdBy} Created by</p>
-        <p>{document.category.label} </p>
-        <div>{document.dueDate}</div>
+        <h3>Party name: {document.partyName}</h3>
+        <p>Party details: {document.details}</p>
+        <p>Created by: {document.createdBy} </p>
+        <p>Party type: {document.category.label} </p>
+        <div>Party's date: {document.dueDate}</div>
         {/* <div>{new Date(Number(document.dueDate)).toDateString()}</div> */}
         {canEdit && (
           <div><Link to={`/list/${id}/edit`} party={document} >Edit</Link></div>

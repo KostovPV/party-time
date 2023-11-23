@@ -17,57 +17,55 @@ import Details from './pages/Details/Details';
 import Edit from './pages/Edit/Edit';
 
 function App() {
-  const { user, authIsReady } = useAuthContext();
-  // const navigate = useNavigate();
-  return (
-    <div className="App">
-      {authIsReady && (
-        <BrowserRouter>
+    const { user, authIsReady } = useAuthContext();
+    // const navigate = useNavigate();
+    return (
+        <div className="App">
+            {authIsReady && (
+                <BrowserRouter>
 
-          <Navbar />
-          <main id="main-content" className='mainBox'>
-            {/* {user && <Sidebar />} */}
-            <Routes>
-              <>
-                <Route path="/" element={<Home />} >
+                    <Navbar />
+                    <main id="main-content" className='mainBox'>
+                        {/* {user && <Sidebar />} */}
+                        <Routes>
+                            <>
+                                <Route path="/" element={<Home />} >
 
-                </Route>
-                <Route path="/profile" element={<Profile />} >
-                
-                </Route>
-                <Route path="/create" element={<Create />} >
-                
-                </Route>
-                <Route path="/list" element={<List />} >
-                
-                </Route>
-                <Route path="/list/:id" element={<Details />} >
-                
-                </Route>
-                <Route path="/list/:id/edit" element={<Edit />} >
-                
-                </Route>
-              </>
+                                </Route>
+                                <Route path="/profile" element={<Profile />} >
 
+                                </Route>
+                                <Route path="/create" element={<Create />} >
 
-              <Route path="/signup"
-                element={!user ? <Signup /> : <Navigate to="/" />}>
-                {/* {!user && <Signup />}
+                                </Route>
+                                <Route path="/list" element={<List />} >
+
+                                </Route>
+                                <Route path="/list/:id" element={<Details />} >
+
+                                </Route>
+                                <Route path="/list/:id/edit" element={<Edit />} >
+
+                                </Route>
+                            </>
+                            <Route path="/signup"
+                                element={!user ? <Signup /> : <Navigate to="/" />}>
+                                {/* {!user && <Signup />}
            {user && <Navigate to="/"/>} */}
-              </Route>
-              <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />}>
-                {/* {!user && <Login />}
+                            </Route>
+                            <Route path="/login" element={!user ? <Login /> : <Navigate to="/" />}>
+                                {/* {!user && <Login />}
            {user && <Navigate to="/"/>} */}
 
-              </Route>
-            </Routes>
-          </main>
+                            </Route>
+                        </Routes>
+                    </main>
 
-          <Footer />
-        </BrowserRouter>
-      )}
-    </div>
-  );
+                    <Footer />
+                </BrowserRouter>
+            )}
+        </div>
+    );
 }
 
 export default App

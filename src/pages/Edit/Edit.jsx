@@ -247,8 +247,10 @@ export default function Edit() {
     setFormError(null)
     await updateDoc(ref, newparty
     )
+    navigate('/list')
 
   }
+  
 
     const onExit = (e) => {
     e.preventDefault();
