@@ -4,6 +4,7 @@
 
 // import { useCollection } from '../hooks/useCollection';
 // import { useAuthContext } from '../hooks/useAuthContext'; 
+import Location from '../../components/Location/Location';
 import './Home.css'
 
 export default function Home() {
@@ -23,6 +24,9 @@ export default function Home() {
             <div className="welcome-message">
                 Welcome to The party center
                 We hope we are going to have a great time together
+                <>
+                <Location />
+                </>
             </div>
         </div>
     );
