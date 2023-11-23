@@ -41,7 +41,7 @@ export default function Location() {
                 const { latitude, longitude } = position.coords;
                 const distance = findDistance({ latitude, longitude });
                 console.log(distance);
-                setDistance(distance);
+                setDistance(distance.toFixed(2));
             },
             (error) => {
                 console.error('Error getting geolocation:', error);
