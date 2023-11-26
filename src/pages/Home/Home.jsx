@@ -5,6 +5,7 @@
 // import { useCollection } from '../hooks/useCollection';
 // import { useAuthContext } from '../hooks/useAuthContext'; 
 import Location from '../../components/Location/Location';
+// import VisitsCounter from '../../components/VisitsCounter/VisitsCounter';
 import './Home.css'
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
                 We hope we are going to have a great time together
                 <>
                 <Location />
+                {/* <VisitsCounter /> */}
                 </>
             </div>
         </div>

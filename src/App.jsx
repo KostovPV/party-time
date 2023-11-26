@@ -15,6 +15,7 @@ import Create from './pages/Create/Create';
 import List from './pages/List/List';
 import Details from './pages/Details/Details';
 import Edit from './pages/Edit/Edit';
+import FindUs from './pages/FindUs/FIndUs';
 
 function App() {
     const { user, authIsReady } = useAuthContext();
@@ -30,6 +31,9 @@ function App() {
                         <Routes>
                             <>
                                 <Route path="/" element={<Home />} >
+
+                                </Route>
+                                <Route path="/findus" element={<FindUs />} >
 
                                 </Route>
                                 <Route path="/profile" element={<Profile />} >

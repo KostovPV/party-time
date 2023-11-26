@@ -44,6 +44,8 @@ export default function Navbar() {
         <li><Link to="/profile">  Update Profile</Link></li>
         <li><Link to="/create">Create party</Link></li>
         <li><Link to="/list">Party's list</Link></li>
+        <li><Link to="/findus">Find us</Link></li>
+
        
         {!isPending && <button className="btn" onClick={logout}>Logout</button>}
         {isPending && <button className="btn" disabled>Logging out...</button>}

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useLogin } from '../../hooks/useLogin'
 
+// import { incrementVisitCount } from '../../firebase/firebaseService';
 // styles
 import './Login.css'
 
@@ -9,9 +10,11 @@ export default function Login() {
   const [password, setPassword] = useState('')
   const { login, error, isPending } = useLogin()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     login(email, password)
+    // await incrementVisitCount();
+
   }
 
   return (
